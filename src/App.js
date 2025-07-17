@@ -1,12 +1,11 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 import { motion } from "framer-motion";
-import "@fontsource/poppins"; // Assuming you installed this font via npm/yarn
+import "@fontsource/poppins"; 
 
 export default function Portfolio() {
   return (
     <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen font-poppins">
       
-      {/* Sticky Header */}
       <header className="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-blur-md z-30 py-6 px-4 flex flex-col items-center shadow-lg">
         <motion.h1
           initial={{ y: -20, opacity: 0 }}
@@ -57,9 +56,9 @@ export default function Portfolio() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 text-gray-300 text-lg">
           <p><strong>Languages:</strong> Java, Python, JavaScript, C</p>
-          <p><strong>Frontend:</strong> React.js, Vite, HTML, CSS, Axios</p>
+          <p><strong>Frontend:</strong> React.js, HTML, CSS</p>
           <p><strong>Backend:</strong> Node.js, Express.js, REST APIs</p>
-          <p><strong>Database & Security:</strong> MongoDB, MySQL, JWT Auth, Bcrypt</p>
+          <p><strong>Database:</strong> MongoDB, MySQL</p>
           <p><strong>Version Control:</strong> Git, GitHub</p>
         </div>
       </motion.section>
@@ -77,10 +76,10 @@ export default function Portfolio() {
         <div className="bg-gray-800 rounded-xl p-8 shadow-xl hover:shadow-cyan-600 transition-shadow">
           <h3 className="text-2xl font-bold mb-4">E-commerce Application (Nov 2024)</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-300 text-lg">
-            <li>Full-stack e-commerce site with product browsing, secure JWT login/register, persistent shopping cart.</li>
-            <li>Frontend: React (Vite) with Axios for API communication.</li>
-            <li>Backend: RESTful APIs with Node.js and Express, MongoDB database.</li>
-            <li>Security: Password hashing with Bcrypt, JWT authentication and route protection.</li>
+            <li>Built a full-stack e-commerce website featuring product browsing, user authentication, and a persistent shopping cart..</li>
+            <li>Developed the frontend using React (Vite) and implemented Redux for efficient state management across components.</li>
+            <li>Integrated MongoDB for structured storage of user and product data.</li>
+            <li>Secured authentication with JWT and Bcrypt, ensuring protected sessions and access-controlled routes.</li>
           </ul>
           <a href="https://github.com/harishragav-s/ecommerce-mern" target="_blank" rel="noreferrer" className="inline-block mt-6 text-cyan-400 hover:underline">
             View on GitHub
@@ -114,6 +113,11 @@ export default function Portfolio() {
               title: "AWS Cloud Practitioner Essentials",
               authority: "AWS (Coursera)",
               link: "https://www.coursera.org/account/accomplishments/verify/W7S2Y3TX9AM3",
+            },
+            {
+              title: "JP Morgan SWE Job Simulation",
+              authority: "Forage",
+              link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_ubmj4PoYCZbwSFrMe_1725183281132_completion_certificate.pdf",
             },
             {
               title: "AI for Beginners",
